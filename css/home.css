@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+body {background-color: black}
+
+/* Style the header */
+h2.titles{
+	margin-left: 100px;
+	margin-right: AUTO;
+	text-align:center;
+	float: center;
+	width: 1024px;
+	height: 20px;
+	font-size: 40px;
+	margin-top: 20px;
+	color: darkred;
+	text-shadow: 2px 2px 2px pink, 
+               6px 6px 20px black;
+}
+/*THIS IS ONLY FOR IMAGE DESIGN*/
+#u1{
+	float:left;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-top: 210px;
+	margin-left: -170px;	
+}
+#u2{
+	float:left;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-top: 210px;
+	margin-left: -155px;	
+}
+#u3{
+	float:left;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-top: 210px;
+	margin-left: -148px;	
+
+}
+#u3a{
+	float:left;
+	font-size: 18px;
+	text-align: center;
+	margin: auto;
+	margin-top: 230px;
+	margin-left: -210px;	
+	width: 190px;
+	height: 30px;
+}
+#u3b{
+	float:left;
+	font-size: 18px;
+	text-align: center;
+	margin: auto;
+	margin-top: 230px;
+	margin-left: -200px;	
+	width: 190px;
+	height: 30px;
+}
+#u3c{
+	float:left;
+	font-size: 18px;
+	text-align: center;
+	margin: auto;
+	margin-top: 230px;
+	margin-left: -200px;	
+	width: 190px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+/*THIS IS ONLY FOR IMAGE DESIGN*/
+.Jason{
+	float: center;
+	margin-left: 150px;
+}
+.dropdown-content.a1 {
+  display: none;
+  position: absolute;
+  background-color: firebrick;
+ min-width: 110px;
+  width: 120px;
+  box-shadow: 20px 22px 12px 8px  rgba(2,0,0,0);
+  z-index: 1;
+  text-align: center;
+  margin-top: 81px;
+ margin-left: -10px;
+  padding-left: -8px;
+  padding-right: -1px;
+}
+.dropdown-content.a1 a {
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+    float: center;
+}

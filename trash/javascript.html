@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+<link rel="stylesheet" href="../css/layout.css"><!-- Grupal -->
+<link rel="stylesheet" href="../css/layoutjava.css"><!-- Individual-->		
+<link rel="icon" href="../images/favicon.png" type="../image/x-icon"/>
+		<div class="video_contain">
+<video autoplay loop id="backgroundV" muted plays-inline>
+                <source src="../videos/3.mp4" poster="../images/4k.jpg" type="video/mp4">
+			</video>
+		</div>
+</head>
+<body>
+	<div class="overall">
+		<div class="header">
+		  <div id="logo"><a href="../index.html"><img width="120" height="70" alt="SPS" src="../images/logoUI.png"></a></div>
+			<div><h2 id="text">Professional Media Studio</h2>
+			</div>
+		</div>
+		<div class="column left">
+	 	   <ul id="texto">
+			   <li><a  href="../index.html">Home</a></li>
+			   <li><div class="dropdown"><a class="colour" href="../tools.html">Tools</a>
+  					<div class="dropdown-content">
+   				<a href="../Toolspg/javascript.html">JavaScript</a>
+   				<a href="../Toolspg/php.html">PHP</a></div>
+				   </div>
+				</li>
+			   <li><div class="dropdown"><a href="../utilities.html">Utilities</a>
+  					<div class="dropdown-content">
+   				<a href="../Toolspg/html5.html">HTML</a>
+   				<a href="../Toolspg/css.html">CSS</a></div>
+				   </div>
+				</li>
+			   <li><a href="../others.html">Other</a></li>
+			   <li><div class="dropdown">
+			   <a href="../index.html">Teammates</a>
+  					<div class="dropdown-content">
+   				<a href="../users/user1.html">Alí Sadykov</a>
+   				<a href="../users/user2.html">Joan Puig</a>
+			    <a href="../users/user3.html">Roc Sala</a></div>
+				   </div>
+				</li>   
+		  </ul>
+  			 <!--DIV column left .-->	
+		</div> <!--DIV dropdown.-->
+	 <!--DIV dropdown-content.-->
+
+<!-- Body start.-->
+	  <div class="column_right_java">
+		<h2 class="titlesjava">JavaScript</h2>
+<img class="fotojslogo1" src="../images/java_image.png" alt="javalogo" height="170" width="200">			
+		<p class="slatejava">
+JavaScript is a programming language commonly used in web development. JavaScript is a client-side scripting language, which means the source code is processed by the client's web browser rather than on the web server. This means JavaScript functions can run after a webpage has loaded without communicating with the server.</p>
+<h2 class="titlesjava">Great examples</h2>
+<img class="fotojslogo1" src="../images/js.png" alt="pcjava" height="170" width="200">
+<p class="slatejava">
+Below is an example of a basic JavaScript function based on a bulb. With that object, we are able to turn it
+on and off by pressing the bottons on screen indicating each function.</p>
+
+<div class="bulbparagraph">
+		<button class="bulb_on" onclick="document.getElementById('myImage').src='../images/pic_bulbon.jfif'">Turn on the light</button>
+<img id="myImage" src="../images/pic_bulboff.gif" alt="bulb" style="width:100px">
+<button class="bulb_off" onclick="document.getElementById('myImage').src='../images/pic_bulboff.gif'">Turn off the light</button>
+</div>
+<img class="fotojslogo1" src="../images/3j.png" alt="pcjava" height="170" width="200">	
+
+<h2 class="titlesjava">Example</h2>
+<p class="slatejava">
+This is the code used for the example above, HTML, CSS and JavaScript included under the boxes below.</p>
+<div class="htmlstructure">
+<h2 class="titlehtml">HTML structure</h2>
+<pre class="htmlcode">
+&lt;div class="bulbparagraph">
+&lt;button class="bulb_on" 
+onclick="document.getElementById
+('myImage').src='../images/Profile/pic_bulbon.jfif'">
+Turn on the light&lt;/button&gt;&lt;img="myImage"
+src="../images/Profile/pic_bulboff.gif"
+ style="width:100px"&gt;&lt;button class="bulb_off" 
+onclick="document.getElementById('myImage')
+.src='../images/Profile/pic_bulboff.gif'">
+Turn off the light&lt;/button&gt;&lt;div&gt;</pre>
+</div>
+
+<div class="css_strucutre_off">
+<h2 class="titlecssoff">CSS to turn it off</h2>
+<pre class="csscodeoff">
+.bulb_off{
+    border: 3px solid black;
+  position: relative;
+  background-color: #DD4132;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.bulb_off:hover {
+   border: 3px solid silver;
+  background-color: black;
+  transition-duration: 0.4s;
+}
+.bulb_off:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.bulb_off:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+</div>
+<div class="bulbstucture">
+	<h2 class="titlesbulb">Bulbs images</h2>
+	<a class="bulboffgif" href="../images/pic_bulboff.gif" target="_blank"> 
+  <img src="../images/pic_bulboff.gif" alt="bulboff" width="104" height="142">
+</a>
+	<a class="bulbongif" href="../images/pic_bulbon.jfif" target="_blank">
+  <img src="../images/pic_bulbon.jfif"  alt="bulbon" width="104" height="142">
+</a>
+<!--<p class="slatebulb"><!--These bulbs images you 
+ought to to download
+to show this content
+ on your website-->
+</div>
+<div class="css_strucutre_on">
+
+<h2 class="csstitleon">CSS to turn it on</h2>
+
+<pre class="csscodeon">
+.bulb_on{
+  position: relative;
+  background-color: #4CAF50;
+  border: 3px solid black;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.bulb_on:hover {
+   border: 3px goldenrod;
+  background-color: goldenrod;
+  transition-duration: 0.4s;
+}
+.bulb_on:after {
+  content: "";
+  background: gold;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.bulb_on:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+</div>
+
+<!-- End colum_left_java-->
+
+<!-- End colum_right_java-->
+
+		
+		<!-- Body end .-->
+		<div class="footer">
+				<div id="logo1"><img width="120" height="80" alt="SPS" src="../images/logoUI.png"></div>
+			<div class="buttonloc"><button id="BC" onclick="myFunction()">Pause</button></div>
+			<span>
+				<p class="developer"><b>Copyright © </b> 2020 Ali Sadykov, Joan Puig, Roc Sala</p> 
+				<p class="developer">All Rights Reserved </p>
+				<p class="developer"><b>Address:</b> Passeig de Sant Joan Bosco, 42, 08017 Barcelona</p>
+				<p class="developer"><b>Contact Number:</b> 932 03 11 00</p>
+				<p class="developer"><b>Email:</b><a href="mailto:salesians.sarria@salesians.cat">Salesians Sarria Barcelona</a> </p>
+		   </span>
+
+			 </div>
+	 
+</body>
+	<script>
+var video = document.getElementById("backgroundV");
+var btn = document.getElementById("BC");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</html>
+<!--HTML version 5.0, CSS version 3.0, User Created Page version: 2.0.300120b0339, All rights reserverd © 2020, Ali Sadykov, Salesians Sarria. This site may be subject to modifications and improvements by only previously authorised people-->

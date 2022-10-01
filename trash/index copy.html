@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+		<div class="video_contain">
+<video autoplay loop id="backgroundV" muted plays-inline>
+                <source src="videos/chinaa.mp4" poster="images/4k.jpg" type="video/mp4">
+			</video>
+		</div>
+</head>
+<body>
+	<div class="overall">
+		<div class="header">
+		  <div id="logo"><a href="index.html"><img width="120" height="70" alt="SPS" src="images/logoUI.png"></a></div>
+			<div><h2 id="text">Professional Media Studio</h2>
+			</div>
+		</div>
+		<div class="column left">
+		   <ul id="texto">
+			   <li><a class="colour" href="index.html">Home</a></li>
+			   <li><div class="dropdown"><a href="tools.html">Tools</a>
+  					<div class="dropdown-content">
+   				<a href="users/user1.html">JavaScript</a>
+   				<a href="users/user2.html">PHP</a>
+			    <a href="users/user3.html">BootStrap</a></div>
+				   </div>
+				</li>
+			   <li><div class="dropdown"><a href="tools.html">Utilities</a>
+  					<div class="dropdown-content">
+   				<a href="Toolspg/javascript.html">WHAT</a>
+   				<a href="Toolspg/php.html">HOW?</a>
+			    <a href="Toolspg/bootstrap.html">WHY</a></div>
+				   </div>
+				</li>
+			   <li><a href="others.html">Other</a></li>
+			   <li><div class="dropdown">
+			   <a href="index.html">Teammates</a>
+  					<div class="dropdown-content">
+   				<a href="users/user1.html">Alí Sadykov</a>
+   				<a href="users/user2.html">Joan Puig</a>
+			    <a href="users/user3.html">Roc Sala</a></div>
+				   </div>
+				</li>   
+		  </ul>
+				
+	  <div class="column right">
+		  <h2 class="titles">About us</h2>
+		  <p class="slate">Lorem ipsum dolor sit amet consectetur adipiscing elit magna vulputate placerat, posuere praesent nisi duis cursus augue non semper. Integer lectus mus mollis est habitasse fames conubia.
+		  </p>
+		  <p class="slate">Duis mollis sagittis libero arcu euismod eros est curabitur, egestas rhoncus cursus suspendisse pulvinar primis iaculis malesuada, class nunc ultricies bibendum scelerisque lobortis nullam. Senectus donec dictum lacus nostra egestas tristique</p>
+		   <h2 class="titles">Our Team</h2>
+	<div class="Jason">
+	     <a href="users/user1.html"><img class="Round" src="images/Profile/profilepic.JPG" width="140" alt="user1"></a>
+			<h1 id="u1">Ali Sadykov</h1>
+			<p id="u3a">Our main purpose is to erradicate as many people as possible</p>
+       	<a href="users/user2.html"><img class="Round" src="images/Profile/pic02.jpg" width="130" alt="user2"></a>
+		    <h1 id="u2">Joan Puig</h1>
+					<p id="u3b">I shall agree with the guy next to me, otherwise he kills my family</p>
+		 <a href="users/user3.html"><img class="Round" src="images/Profile/pic03.jpg" width="130" alt="user3"></a>
+			<h1 id="u3">Roc Sala</h1>
+					<p id="u3c">Both of you, shut the f$ck UP!</p>
+	</div>
+		  	
+	</div>
+			<div class="footer">
+				<div id="logo1"><img width="120" height="80" alt="SPS" src="images/logoUI.png"></div>
+			<div class="buttonloc"><button id="BC" onclick="myFunction()">Pause</button></div>
+			<span>
+				<p class="developer"><b>Copyright © </b> 2020 Ali Sadykov, Joan Puig, Roc Sala</p> 
+				<p class="developer">All Rights Reserved </p>
+				<p class="developer"><b>Address:</b> Passeig de Sant Joan Bosco, 42, 08017 Barcelona</p>
+				<p class="developer"><b>Contact Number:</b> 932 03 11 00</p>
+				<p class="developer"><b>Email:</b><a href="mailto:salesians.sarria@salesians.cat">Salesians Sarria Barcelona</a> </p>
+		   </span>
+			 </div>
+		</div>
+	</div>
+</body>
+	<script>
+var video = document.getElementById("backgroundV");
+var btn = document.getElementById("BC");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</html>
+<!--HTML version 5.0, CSS version 3.0, User Created Page version: 2.0.300120b0339, All rights reserverd © 2020, Ali Sadykov, Salesians Sarria. This site may be subject to modifications and improvements by only previously authorised people-->

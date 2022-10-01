@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Language Test</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	
+
+<div class="navbar navbar-fixed-top" id="navbar-cms">
+	<div class="navbar-inner">
+		<div class="container-fluid nav-container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="https://weastlms.com/index"><img src="https://d3j0t7vrtr92dk.cloudfront.net/weastlms/1562545149_50x40%20logo.png?" class="avatar-square"></a>
+			<div class="nav-collapse collapse">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<br><br><br><br><br>
+<h1 class="text-center" id="hi">hello i `m english </h1>
+
+<script>
+	var navbarLang = document.querySelector('#navbar-cms .nav-container');
+
+// create language button 
+// arabic
+var creatbtnAr = document.createElement("a");
+creatbtnAr.innerHTML = "AR";
+creatbtnAr.classList.add("buttonAr");
+creatbtnAr.href = "#ar";
+creatbtnAr.setAttribute("data-reload",'');
+creatbtnAr.addEventListener('click', event => {
+  translate('ar');
+});
+navbarLang.appendChild(creatbtnAr);
+
+// english
+var creatbtnEr = document.createElement("a");
+creatbtnEr.innerHTML = "En";
+creatbtnEr.classList.add("buttonEr");
+creatbtnEr.href = "#en";
+creatbtnEr.setAttribute("data-reload",'');
+creatbtnEr.addEventListener('click', event => {
+  translate('en');
+});
+navbarLang.appendChild(creatbtnEr);
+
+function translate(language) {
+  if(language === 'en') {
+    document.getElementById('hi').textContent = 'hhhhhhhhhhhhh';
+  }
+    if(language === 'ar') {
+    document.getElementById('hi').textContent = 'نعم نعم نعم نعم';
+  }
+}
+</script>
+<style>
+	#navbar-cms .nav-container{
+  position: relative;
+}
+#navbar-cms .buttonAr{
+  position: absolute;
+  top:4px;
+  left: 100px;
+  background:#333;
+  z-index: 9999;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+#navbar-cms .buttonEr{
+  position: absolute;
+  top:4px;
+  left: 140px;
+  background:#333;
+  z-index: 9999;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor: pointer;
+}
+	</style>
+</body>
+
+</html>

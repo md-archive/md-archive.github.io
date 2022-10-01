@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tools</title>
+<link rel="stylesheet" href="css/layout.css">	
+		<div class="video_contain">
+<video autoplay loop id="backgroundV" muted plays-inline>
+                <source src="videos/banner.mp4" poster="/images/4k.jpg" type="video/mp4">
+			</video>
+		</div>
+</head>
+<body>
+	<div class="overall">
+		<div class="header">
+		  <div id="logo"><a href="index.html"><img width="120" height="70" alt="SPS" src="images/logoUI.png"></a></div>
+			<div><h2 id="text">SPS</h2>
+			</div>
+		</div>
+		<div class="column left">
+		   <ul id="texto">
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="aboutus.html">About Us</a></li>
+			   <li><a class="colour" href="tools.html">Tools</a></li>
+			   <li><a href="utilities.html">Utilities</a></li>
+			   <li><a href="others.html">Other</a></li>
+	   	   </ul>
+		</div>		
+		<div class="column right">
+
+		 <p>JOJO</p>
+	</div>
+		<div class="footer">
+				<div id="logo1"><img width="120" height="80" alt="SPS" src="images/logoUI.png"></div>
+			<div class="buttonloc"><button id="BC" onclick="myFunction()">Pause</button></div>
+			<span>
+				<p class="developer"><b>Copyright © </b> 2020 Ali Sadykov, Joan Puig, Roc Sala</p> 
+				<p class="developer">All Rights Reserved </p>
+				<p class="developer"><b>Address:</b> Passeig de Sant Joan Bosco, 42, 08017 Barcelona</p>
+				<p class="developer"><b>Contact Number:</b> 932 03 11 00</p>
+				<p class="developer"><b>Email:</b> salesians.sarria@salesians.cat</p>
+		   </span>
+			 </div>
+	</div>
+</body>
+	<script>
+var video = document.getElementById("backgroundV");
+var btn = document.getElementById("BC");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</html>
+<!--HTML version 5.0, CSS version 3.0, User Created Page version: 2.0.300120b0339, All rights reserverd © 2020, Ali Sadykov, Salesians Sarria. This site may be subject to modifications and improvements by only previously authorised people-->

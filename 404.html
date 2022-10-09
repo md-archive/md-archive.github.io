@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Error 404</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/custom_layout.css">
-  <link rel="stylesheet" href="css/buttons.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <div class="video_contain">
-<video autoplay loop id="backgroundV" muted plays-inline>
+    <title>Error 404</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom_layout.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <div class="video_contain">
+        <video autoplay loop id="backgroundV" muted plays-inline>
                 <source src="videos/3.mp4" poster="images/4k.jpg" type="video/mp4">
       </video>
     </div>
 </head>
 
 <body>
-<!--<div class="header">
-  <h1>Professional Media Archive</h1>
-  <p class="typeA">Welcome to the Professional Media Archive Service</p> 
-</div>-->
-<div class="main_object">
-    <form class="backdrop-blur" action="index.html" method="post">
-      <!-- THIS IS A LOGIN SECTION -->
-      <!--LOGO UI-->
-  <div class="imgcontainer">
-    <img src="images/404.png" alt="Error 404" class="avatar">
-  </div>
-<!-- CONTAINER FOR USERNAME AND PASSWORD -->
-<h1>Uh-Oh!</h1>
-<button>Home</button>
-<p class="typeA"> Error code: 404 Page Not Found</p>
- <h2>The Requested Page Was Not Found!</h2>
-  </div>
+
+    <div class="main_object">
+        <form class="backdrop-blur" action="index.html" method="post">
+            <!-- THIS IS A LOGIN SECTION -->
+            <!--LOGO UI-->
+            <div class="imgcontainer">
+                <img src="images/404.png" alt="Error 404" class="avatar">
+            </div>
+            <!-- CONTAINER FOR USERNAME AND PASSWORD -->
+            <h1>Uh-Oh!</h1>
+            <h2>The Requested Page Was Not Found!</h2>
+            <button>Home</button>
+    </div>
     <!--
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>-->
-</form>
-  </div>
+    </form>
+    </div>
 
-<footer class="page-footer mt-auto">
-   <p class="typeB">Copyright © Media Archive Inc. 2020</p>
- <p ><a class="typeAB" href="/privacy_policy.html">Privacy Policy</a></p>
-   <button class="bg_video_ctl" onclick="myFunction()">Pause</button>
-    <select class="selectpicker" data-width="fit">
+    <footer class="page-footer mt-auto">
+        <p class="typeB">Copyright © Media Archive Inc. 2020</p>
+        <p><a class="typeAB" href="/privacy_policy.html">Privacy Policy</a></p>
+        <button class="bg_video_ctl" onclick="myFunction()">Pause</button>
+        <select class="selectpicker" data-width="fit">
         <option data-content='English'>English</option>
         <option  data-content='Español'>Español</option>
         <option  data-content='Français'>Français</option>
@@ -53,27 +50,28 @@
         <option  data-content='日本語'>日本語</option>
     </select>
 
-</footer>
+    </footer>
 
 
 </body>
 <script>
-  $(function(){
-    $('.selectpicker').selectpicker();
-});
+    $(function() {
+        $('.selectpicker').selectpicker();
+    });
 </script>
 <script>
- var video = document.getElementById("backgroundV");
-var btn = document.getElementById("BC");
+    var video = document.getElementById("backgroundV");
+    var btn = document.getElementById("BC");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
 </script>
+
 </html>

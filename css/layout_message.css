@@ -4,9 +4,17 @@
 
 html,
 body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+html,
+body {
     color: rgb(65, 78, 87);
     height: 100.1%;
 }
+
 body {
     display: grid;
     flex-direction: column;
@@ -31,27 +39,29 @@ h1 {
     float: center;
     width: 600px;
     height: 20px;
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 0px;
-    line-height: 1.2;
+    line-height: 3;
     color: white;
     text-shadow: 2px 2px 2px #000, 6px 6px 20px black;
 }
-h2{
- margin-left: auto;
+
+h2 {
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
     float: center;
     width: 600px;
-    padding-top: 100px;
-    font-size: 25px;
-    line-height: 1.2;
+    padding-top: 50px;
+    font-size: 22px;
+    line-height: 1.5;
     color: white;
- 
 }
-p{
-	margin: 10px 0 10px;
+
+p {
+    margin: 10px 0 10px;
 }
+
 p.typeA {
     text-align: center;
     float: center;
@@ -61,19 +71,20 @@ p.typeA {
 }
 
 p.typeB {
-
-	margin-left: 2%;
-	margin-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 15px;
     text-align: left;
     float: left;
     color: white;
 }
-a:hover{
-	color: rgba(203,142,60,100%);
+
+a:hover {
+    color: rgba(203, 142, 60, 100%);
 }
-.typeAB {;
-	margin-top: 2%;
+
+.typeAB {
+    margin-top: 2%;
     font-size: 15px;
     padding: auto;
     list-style-type: none;
@@ -96,6 +107,8 @@ footer {
     float: left;
     color: white;
 }
+
+
 /* Window Manager */
 
 form {
@@ -108,23 +121,26 @@ form {
     background-color: #413E3E;
     border-radius: 55px;
     box-shadow: 8px 4px 50px black;
-    
- }
- /* slightly transparent fallback */
-form .backdrop-blur {
-  background-color: rgba(20, 18, 18, .4);
-
 }
+
+
+/* slightly transparent fallback */
+
+form .backdrop-blur {
+    background-color: rgba(20, 18, 18, .4);
+}
+
 
 /* if backdrop support: very transparent and blurred */
+
 @supports ((-webkit-backdrop-filter: blur(9px)) or (backdrop-filter: blur(4px))) {
-  .backdrop-blur {
-    background-color: rgba(20, 18, 18, .4);
-    -webkit-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px) contrast(80%);
-    
-  }
+    .backdrop-blur {
+        background-color: rgba(20, 18, 18, .4);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px) contrast(80%);
+    }
 }
+
 
 /* Full-width inputs */
 
@@ -159,11 +175,11 @@ input[type=password] {
 .position {
     float: center;
     margin-right: 0%;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 20%;
     padding: 0%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 15%;
+    padding-right: 0%;
 }
 
 #texture {
@@ -192,7 +208,8 @@ button {
     cursor: pointer;
     width: auto;
 }
-button.bg_video_ctl{
+
+button.bg_video_ctl {
     border-radius: 30px;
     height: 30px;
     width: 100px;
@@ -203,16 +220,17 @@ button.bg_video_ctl{
     left: 57%;
     right: 0;
     bottom: 0;
-    background-color: rgba(53,62,68, 100%);
+    background-color: rgba(53, 62, 68, 100%);
     -webkit-transition: .10s;
     transition: .8s;
     margin-right: auto;
     padding: 0px 0px;
 }
 
-button.bg_video_ctl:hover{
-	background-color: rgba(141,4,4, 100%);
+button.bg_video_ctl:hover {
+    background-color: rgba(141, 4, 4, 100%);
 }
+
 
 /* Center the avatar image inside this container */
 
@@ -234,10 +252,10 @@ ul {
 img {}
 
 img.avatar {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 170px;
-    height: 105px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 210px;
+    height: 130px;
     display: inline-block;
     /* border-radius: 50%; */
     /* box-shadow: 4px 4px 4px #000, 8px 4px 25px black;*/
@@ -262,11 +280,12 @@ img.avatar {
     width: auto;
     height: auto;
     opacity: 100%;
- /*   -webkit-filter: blur(30px);
+    /*   -webkit-filter: blur(30px);
     -moz-filter: blur(30px);
     -o-filter: blur(30px);
     -ms-filter: blur(30px);
     filter: blur(30px);*/
 }
+
 
 /*CSS version 3.0, User Created Cascade Style Sheet version: 3.0.030220b1931, All rights reserverd © 2020 Ali Sadykov, Salesians Sarria. This code may be subject to modifications and improvements by only previously authorised people and/or institutions*/

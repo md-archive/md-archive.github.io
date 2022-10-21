@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>md-archive - Presentation Mode</title>
+
+    <meta name="description" content="Presentation for FP GS S2SX">
+    <meta name="author" content="Ali Sadykov">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---->
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monobase.css">
+
+    <!--Don't touch that-->
+    <link rel="stylesheet" href="dist/miau.css">
+    <script src="dist/miau.js"></script>
+
+    <!--ZOOM-->
+    <style type="text/css">
+        #zoom1 {
+            zoom: normal;
+        }
+        
+        #zoom2 {
+            zoom: 1.5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+
+
+            <section data-background="images/jokers.gif" data-transition="convex" data-background-repeat="repeat" data-background-size="1000px">
+                <h2 style="color: black">Jocker-Shock Limited.</h2>
+
+                <div class="r-hstack justify-center">
+                    <img style="border: 5px solid black; width: 270px; height: 270px;" src="images/business/bbb.png">
+                    <blockquote style="border: 5px solid #555;background: rgba(61, 61, 61, 0.818); color: white; font-size: 25px; margin: 10px; ">“Joker-Shock Ltd., es una editorial de cómics española que tiene varias sedes en Nueva York EE.UU. y Barcelona, España. La empresa, principalmente, se ocupa de distribuir y traducir --al español-- los comics de editoriales grandes
+                        (Marvel, DC Comics, Archie Universe, etc.) pero al mismo tiempo creamos contenido propio que vendemos en diferentes partes del mundo. El comic famoso, “Andy y Los Amigos”, ya ha tenido éxito en Francia, Alemania, China y Rusia.”</blockquote>
+                </div>
+                <a href="index.html#/6/2"><button>Return</button></a>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="dist/reveal.js "></script>
+    <script src="plugin/zoom/zoom.js "></script>
+    <script src="plugin/notes/notes.js "></script>
+    <script src="plugin/search/search.js "></script>
+    <script src="plugin/markdown/markdown.js "></script>
+    <script src="plugin/highlight/highlight.js "></script>
+    <script>
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            loop: false,
+
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+
+</body>
+
+</html>

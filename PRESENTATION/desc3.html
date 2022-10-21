@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>md-archive - Presentation Mode</title>
+
+    <meta name="description" content="Presentation for FP GS S2SX">
+    <meta name="author" content="Ali Sadykov">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---->
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monobase.css">
+
+    <!--Don't touch that-->
+    <link rel="stylesheet" href="dist/miau.css">
+    <script src="dist/miau.js"></script>
+
+    <!--ZOOM-->
+    <style type="text/css">
+        #zoom1 {
+            zoom: normal;
+        }
+        
+        #zoom2 {
+            zoom: 1.5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+
+
+            <section data-background-video="videos/tvsection2.mp4" data-background-video-muted data-background-video-loop data-transition="convex" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000) ">
+                <h2>Nickel 'n' Dime Entertainment</h2>
+                <div class="r-hstack justify-center">
+                    <img style="border: 5px solid black; width: 300px; height: 300px;" src="images/business/nndent.png">
+                    <blockquote style="border: 5px solid #555;background: linear-gradient(29deg, rgba(63,94,251,.6) 0%, rgba(252,70,107,1) 98%); color: white; font-size: 25px; margin: 10px; ">“Nickel N Dime Entertainment S.A.U., es un estudio cinematográfico que forma parte de nuestra empresa Media Archive S.A., produce y gestiona los derechos de autor en España para los estudios grandes como Marvel, MGM, Warner Bros. y
+                        más. Además, NND Entertainment produce contenido propio para los servicios de streaming como Hulu, Netflix y Nickel N Dime Videos. Una de las famosas series de televisión producida por nuestra empresa es, Rock and Andy: Buscador
+                        de Fantasmas ”</blockquote>
+                </div>
+                <a href="index.html#/6/2"><button>Return</button></a>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="dist/reveal.js "></script>
+    <script src="plugin/zoom/zoom.js "></script>
+    <script src="plugin/notes/notes.js "></script>
+    <script src="plugin/search/search.js "></script>
+    <script src="plugin/markdown/markdown.js "></script>
+    <script src="plugin/highlight/highlight.js "></script>
+    <script>
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            loop: false,
+
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+
+</body>
+
+</html>

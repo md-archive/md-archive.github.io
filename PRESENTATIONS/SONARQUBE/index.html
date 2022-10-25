@@ -50,9 +50,11 @@
                     <audio src="../../audio/oks.mp3" data-autoplay></audio>
                     <h2>Table of Content:</h2>
                     <ul class="v-stack" style="margin-right: 350px">
-                        <li style="font-size: 25px;color: white">What is Sonarqube</li>
-                        <li style="font-size: 25px;color: white">How does it work</li>
-                        <li style="font-size: 25px;color: white">A03 - Injection</li>
+                        <li style="font-size: 25px;color: white">What is SonarQube?</li>
+                        <li style="font-size: 25px;color: white">What does SonarQube offer?</li>
+                        <li style="font-size: 25px;color: white">How does it work?</li>
+                        <li style="font-size: 25px;color: white">What is BiteGarden?</li>
+
                     </ul>
                 </section>
             </section>
@@ -67,7 +69,7 @@
                     <h2 style="margin-bottom:0% ">What is Sonarqube?</h2>
 
                     <ul>
-                        <img src="https://cdn-icons-png.flaticon.com/512/2801/2801146.png" width="300" height="300" style="float:left; margin-top: 90px">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdU_EhlybY6YcfXFm-WHSTezUlbWkHFhJ7LfH0cVwBS_lg2Ng_PcSHrhqHopM2ck9LMs4&usqp=CAU" width="300" height="300" style="float:left; margin-top: 90px">
                         <p style="background-color: slateblue;font-style: italic; text-align:justify ;padding:5%;color:white; opacity:.9;margin-left:350px"><b>"SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells on 29 programming languages."</b></p>
                     </ul>
 
@@ -75,8 +77,9 @@
                 <section>
                     <audio src="../../audio/down.mp3" data-autoplay></audio>
                     <h2 style="margin-bottom:0% ">What does SonarQube offer?</h2>
-                    <img src="https://en.wikipedia.org/wiki/SonarQube#/media/File:SonarQube_Project_page.png">
-                    <ul style="color:white; font-size: 30px;">
+                    <img src="https://www.sonarqube.org/sonarqube-7-4/index/vb-net-screenshot.png" width="400" height="200" style="float:left; margin-top: 10px">
+                    <img src="https://dz2cdn1.dzone.com/storage/temp/9063708-screen-shot-2018-05-08-at-100248-am.png" width="400" height="200" style="float:left; margin-top: 10px">
+                    <ul style="float:left;margin-left:0%;color:white; font-size: 30px;">
                         <li style="text-align: justify;">SonarQube offers reports on duplicated code, coding standards, unit tests, code coverage, code complexity, comments, bugs, and security recommendations.</li>
                         <li style="text-align: justify;">SonarQube can record metrics history and provides evolution graphs.</li>
                         <li style="text-align: justify;">SonarQube provides fully automated analysis and integration with Maven, Ant, Gradle, MSBuild and continuous integration tools (Atlassian Bamboo, Jenkins, Hudson, etc.)</li>
@@ -84,55 +87,32 @@
                 </section>
                 <section>
                     <audio src="../../audio/down.mp3" data-autoplay></audio>
-                    <h2 style="margin-bottom:0% ">Description </h2>
+                    <h2 style="margin-bottom:0% ">How does it work?</h2>
                     <ul style="color:white; font-size: 30px;">
-                        <p><b>Any web application is vulnerable to attack when:</b></p>
-                        <p style="text-align: justify;">1. User supplied data is <b>NOT</b> validated, filtered or sanitised by the application</p>
-                        <p style="text-align: justify;">2. Queries are escaping through a web application interpreter i.e. Executing any kind of queries through a python or javascript interpreters</p>
-                        <p style="text-align: justify;">3. Hostile data is used within search parameters to extract additional, sensitive records.</p>
-                        <p style="text-align: justify;">4. Hostile data is directly used or concatenated. The SQL or command contains the structure and malicious data in dynamic queries, commands, or stored procedures.</p>
-                    </ul>
-                </section>
-                <section>
-                    <audio src="../../audio/down.mp3" data-autoplay></audio>
-                    <h2 style="margin-bottom:0% ">Common Injection Methods</h2>
-                    <ul style="color:white; font-size: 30px;">
-                        <p><b>Some of the more common injections are:</b></p>
-                        <li>SQL</li>
-                        <li>NoSQL</li>
-                        <li>OS command</li>
-                        <li>Object Relational Mapping (ORM)</li>
-                        <li>LDAP</li>
-                        <li>Expression Language (EL) or Object Graph Navigation Library (OGNL) injection</li>
+                        <p><b>SonarQube offers a user to run either from a Docker Container or from a locally installed instance</b></p>
+                        <img src="../..//images/sonario.png" width="400" height="400" style="float:left; margin-top: 10px">
+                        <li>You can try installing your own version of sonarqube using <a href="https://docs.sonarqube.org/latest/setup/get-started-2-minutes/">this link</a></li>
                     </ul>
                 </section>
             </section>
-            <!--Moodle-->
+
 
             <section data-transition="zoom-in zoom-out" data-background="#261F5D">
                 <section data-transition="slide-in slide-out">
-                    <audio src="../../audio/oks.mp3 " data-autoplay></audio>
-                    <h2>Attack Scenarios: </h2>
-                    <img src="https://miro.medium.com/max/1400/0*F-9UzpCOQlQtWi__.gif" style="height: 400px; width: 1000px; margin: 0 auto 2 rem auto; background: transparent; ">
-                </section>
-                <section data-transition="slide-in fade-out " data-background-repeat="repeat " data-background-size="500px " data-auto-animate data-auto-animate-unmatched="fade">
-                    <audio src="../../audio/down.mp3 " data-autoplay></audio>
-                    <h2>SQL Injection using URI</h2>
-                </section>
-                <section data-auto-animate data-background="#261F5D">
-                    <h2 data-id="code-title ">Examples:</h2>
-                    <audio src="../../audio/oks.mp3 " data-autoplay></audio>
-                    <pre data-id="code-animation " data-transition="convex " style="margin-left: auto;width: 1000px; "><code style="font-size:16px; " class="hljs " data-trim data-line-numbers>                          
-                        http://example.com/app/accountView?id=' or '1'='1
-					</code></pre>
-                    <p>Or you can add similar syntax to a field inside a web page, that would be called XSS (Cross Site Scripting)</p>
-                    <img src="https://www.guru99.com/images/EthicalHacking/Article_13_6.png">
+                    <audio src="../../audio/oks.mp3" data-autoplay></audio>
+                    <h2 style="margin-bottom:0% ">What is BiteGarden?</h2>
+
+                    <ul>
+                        <img src="https://www.bitegarden.com/img/bitegarden-logo.png" width="500" height="150" style="float:left; margin-top: 20%; margin-left: -150px;">
+                        <p style="background-color: slateblue;font-style: italic; text-align:justify ;padding:5%;color:white; opacity:.9;margin-left:350px"><b>"BiteGarden is a group of developers who made a special plugin for SonarQube, their piece of software makes sure the code is well written and is secure to use in production environment"</b></p>
+                    </ul>
+
                 </section>
             </section>
 
             <section data-background="#fda61d " data-transition="zoom-in zoom-out ">
                 <audio src="../../audio/down.mp3" data-autoplay></audio>
-                <h2>Paragraph A04 - Insecure Design</h2>
+                <h2>How to use BiteGarden</h2>
                 <section data-transition="slide-in fade-out " data-background-repeat="repeat " data-background-size="500px " data-auto-animate data-auto-animate-unmatched="fade">
                     <audio src="../../audio/down.mp3 " data-autoplay></audio>
                 </section>

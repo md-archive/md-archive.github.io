@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>md-archive - Presentation Mode</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/layout_message.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--BACKGROUND VIDEOS-->
+    <div class="vmd_container">
+        <video autoplay loop id="bg_video" muted plays-inline>
+         <source src="../videos/3.mp4" poster="images/4k.jpg" type="video/mp4">
+    </video>
+    </div>
+
+
+
+</head>
+
+<body>
+    <!--<div class="header">
+  <h1>Professional Media Archive</h1>
+  <p class="typeA">Welcome to the Professional Media Archive Service</p> 
+</div>-->
+    <div class="main_object">
+        <form action="/login.html" method="post" class="backdrop-blur">
+            <!-- THIS IS A LOGIN SECTION -->
+            <!--LOGO UI-->
+
+            <div class="imgcontainer">
+                <img src="../images/LogoUI.png" alt="Logo" class="avatar">
+            </div>
+            <!-- CONTAINER FOR USERNAME AND PASSWORD -->
+            <h1>Presentation Mode is Enabled</h1>
+            <h2>Please choose a right presentation for you to view!</a>
+            </h2>
+            <div class="position">
+                <button class="glass-button" type="button" onclick="location.href='OWASP/index.html'">OWASP Top 10 List</button>
+                <button class="glass-button" type="button" onclick="location.href='SONARQUBE/index.html'">Sonarqube Presentation</button>
+            </div>
+    </div>
+    <!--
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>-->
+    </form>
+    </div>
+
+    <footer class="page-footer mt-auto">
+        <p class="typeB">Copyright © Media Archive Inc. 2020</p>
+        <p><a class="typeAB" href="privacy_policy.html">Privacy Policy</a></p>
+        <button class="bg_video_ctl" onclick="myFunction()">Pause</button>
+        <select class="selectpicker" data-width="fit">
+        <option data-content='English'>English</option>
+        <option  data-content='Español'>Español</option>
+        <option  data-content='Français'>Français</option>
+        <option  data-content='Русский'>Русский</option>
+        <option  data-content='日本語'>日本語</option>
+    </select>
+    </footer>
+</body>
+<script>
+    $(function() {
+        $('.selectpicker').selectpicker();
+    });
+</script>
+<script>
+    var video = document.getElementById("bg_video");
+    var btn = document.getElementById("bg_video_ctl");
+
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+</script>
+
+</html>

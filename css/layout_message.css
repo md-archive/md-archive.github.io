@@ -182,6 +182,16 @@ input[type=password] {
     padding-right: 2%;
 }
 
+.position_ajax {
+    float: left;
+    margin-right: 0%;
+    margin-top: 40%;
+    margin-left: 15%;
+    padding: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 #texture {
     text-decoration: none;
     list-style-type: none;

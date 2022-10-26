@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>md-archive.com - HTTP Protocol</title>
+    <meta name="description" content="Presentation">
+    <meta name="author" content="Ali Sadykov">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monobase.css">
+    <!--Don't touch that-->
+    <link rel="stylesheet" href="dist/miau.css">
+    <script src="dist/miau.js"></script>
+    <!--ZOOM-->
+    <style type="text/css">
+        #zoom1 {
+            zoom: normal;
+        }
+        
+        #zoom2 {
+            zoom: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section data-background-video="../../videos/bk.mp4" data-transition="convex">
+
+                <img src="../../images/T10.png" alt="Sonarqube Logo" style="opacity:0.9;height: 180px; margin: 0 auto 4rem auto; background: transparent;border-radius:40px;" class="demo-logo">
+                </a>
+                <h3>Protocolo HTTP e Implementación de Ajax</h3>
+                <p>
+                    <small>Presentation created by <a style="color: white;" href="http://md-archive.com">Ali Sadykov</a></small>
+                </p>
+            </section>
+            <!--Que hemos montado-->
+            <section data-transition="slide-in fade-out">
+                <section data-transition="slide-in fade-out" data-background-repeat="repeat" data-background-size="500px" data-background="../../images/wallpapers/particles.gif" data-auto-animate data-auto-animate-unmatched="fade">
+                    <audio src="../../audio/oks.mp3" data-autoplay></audio>
+                    <h2>Table of Content:</h2>
+                    <ul class="v-stack" style="margin-right: 350px">
+                        <li style="font-size: 25px;color: white">What is SonarQube?</li>
+                        <li style="font-size: 25px;color: white">What does SonarQube offer?</li>
+                        <li style="font-size: 25px;color: white">How does it work?</li>
+                        <li style="font-size: 25px;color: white">What is BiteGarden?</li>
+                        <li style="font-size: 25px;color: white">How to use BiteGarden?</li>
+                        <li style="font-size: 25px;color: white">What does BiteGarden do?</li>
+
+                    </ul>
+                </section>
+            </section>
+            <!--FIN Que hemos montado-->
+
+
+            <!--Que vamos a Exponer-->
+            <section data-transition="slide-in fade-out" data-background="https://hellofuture.orange.com/app/uploads/2021/04/home-HF_GA-1920x1080-CYBERSECU.gif">
+
+                <section data-transition="slide-in slide-out">
+                    <audio src="../../audio/oks.mp3" data-autoplay></audio>
+                    <h2 style="margin-bottom:0% ">What is Sonarqube?</h2>
+
+                    <ul>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdU_EhlybY6YcfXFm-WHSTezUlbWkHFhJ7LfH0cVwBS_lg2Ng_PcSHrhqHopM2ck9LMs4&usqp=CAU" width="300" height="300" style="float:left; margin-top: 90px">
+                        <p style="background-color: slateblue;font-style: italic; text-align:justify ;padding:5%;color:white; opacity:.9;margin-left:350px"><b>"SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells on 29 programming languages."</b></p>
+                    </ul>
+
+                </section>
+                <section>
+                    <audio src="../../audio/down.mp3" data-autoplay></audio>
+                    <h2 style="margin-bottom:0% ">What does SonarQube offer?</h2>
+                    <img src="https://www.sonarqube.org/sonarqube-7-4/index/vb-net-screenshot.png" width="400" height="200" style="float:left; margin-top: 10px">
+                    <img src="https://dz2cdn1.dzone.com/storage/temp/9063708-screen-shot-2018-05-08-at-100248-am.png" width="400" height="200" style="float:left; margin-top: 10px">
+                    <ul style="float:left;margin-left:0%;color:white; font-size: 30px;">
+                        <li style="text-align: justify;">SonarQube offers reports on duplicated code, coding standards, unit tests, code coverage, code complexity, comments, bugs, and security recommendations.</li>
+                        <li style="text-align: justify;">SonarQube can record metrics history and provides evolution graphs.</li>
+                        <li style="text-align: justify;">SonarQube provides fully automated analysis and integration with Maven, Ant, Gradle, MSBuild and continuous integration tools (Atlassian Bamboo, Jenkins, Hudson, etc.)</li>
+                    </ul>
+                </section>
+                <section>
+                    <audio src="../../audio/down.mp3" data-autoplay></audio>
+                    <h2 style="margin-bottom:0% ">How does it work?</h2>
+                    <ul style="color:white; font-size: 30px;">
+                        <p><b>SonarQube offers a user to run either from a Docker Container or from a locally installed instance</b></p>
+                        <img src="../..//images/sonario.png" width="400" height="400" style="float:left; margin-top: 10px">
+                        <li>You can try installing your own version of sonarqube using <a href="https://docs.sonarqube.org/latest/setup/get-started-2-minutes/">this link</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Usability Example:</h2>
+                    <iframe width="800" height="440" src="https://www.youtube.com/embed/ezMqyPbwxn4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul style="margin-left: -30%;">
+                        <li style="text-align: left; font-size: 20px;  color:white;">Special thanks to: TechnologyFirst</li>
+                        <li style="text-align: left;font-size: 20px;color:white;">Link: <a href="https://www.youtube.com/embed/ezMqyPbwxn4?">https://www.youtube.com/embed/ezMqyPbwxn4?</a></li>
+                    </ul>
+                </section>
+            </section>
+
+
+            <section data-transition="zoom-in zoom-out" data-background="#CDCDB4">
+                <section data-transition="slide-in slide-out">
+                    <audio src="../../audio/oks.mp3" data-autoplay></audio>
+                    <h2 style="margin-bottom:0% ">What is BiteGarden?</h2>
+                    <ul>
+                        <img src="https://www.bitegarden.com/img/bitegarden-logo.png" width="500" height="150" style="float:left; margin-top: 20%; margin-left: -150px;">
+                        <p style="background-color: slateblue;font-style: italic; text-align:justify ;padding:5%;color:white; opacity:.9;margin-left:350px"><b>"BiteGarden is a group of developers who made a special plugin for SonarQube, their piece of software makes sure the code is well written and is secure to use in production environment"</b></p>
+                    </ul>
+                </section>
+                <section data-background="#CDCDB4" data-transition="zoom-in zoom-out ">
+                    <audio src="../../audio/down.mp3" data-autoplay></audio>
+                    <h2>What does Bitegarden do?</h2>
+                    <section data-transition="slide-in fade-out " data-background-repeat="repeat " data-background-size="500px " data-auto-animate data-auto-animate-unmatched="fade">
+                        <audio src="../../audio/down.mp3 " data-autoplay></audio>
+                        <p>Bitegarden allows the creation of </p>
+                        <ul>
+                            <li>Customisable Metrics Reporting</li>
+                            <li>PDF-Based Reports</li>
+                            <li>Executive Summary</li>
+                            <li>Report Customisation</li>
+                            <li>Excel-Based Reports</li>
+                        </ul>
+                    </section>
+                    <section data-background="#CDCDB4" data-transition="zoom-in zoom-out ">
+                        <audio src="../../audio/down.mp3" data-autoplay></audio>
+                        <h2>How to use BiteGarden</h2>
+                        <section data-transition="slide-in fade-out " data-background-repeat="repeat " data-background-size="500px " data-auto-animate data-auto-animate-unmatched="fade">
+                            <audio src="../../audio/down.mp3 " data-autoplay></audio>
+                        </section>
+
+                    </section>
+
+
+                </section>
+
+                <section style="text-align: left; " data-background="../../images/wallpapers/buhbye.gif " data-background-repeat="repeat " data-background-size="500px ">
+                    <h1>THE END</h1>
+                    <p style="color:white; ">Presentation made possible with <a style="color:red " href="https://www.revealjs.com ">Reveal.js</a> and by <a style="color:orange " href="https://www.linkedin.com/in/ali-s-323220137/">Ali Sadykov</a></p>
+                </section>
+        </div>
+
+    </div>
+
+    <script src="dist/reveal.js "></script>
+    <script src="plugin/zoom/zoom.js "></script>
+    <script src="plugin/notes/notes.js "></script>
+    <script src="plugin/search/search.js "></script>
+    <script src="plugin/markdown/markdown.js "></script>
+    <script src="plugin/highlight/highlight.js "></script>
+    <script>
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            loop: false,
+
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+
+</body>
+
+</html>

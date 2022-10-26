@@ -41,7 +41,7 @@ h1 {
     height: 20px;
     font-size: 40px;
     margin-top: 0px;
-    line-height: 3;
+    line-height: 1;
     color: white;
     text-shadow: 2px 2px 2px #000, 6px 6px 20px black;
 }
@@ -177,9 +177,9 @@ input[type=password] {
     margin-right: 0%;
     margin-top: 0%;
     margin-left: 0%;
-    padding: 15%;
-    padding-left: 18%;
-    padding-right: 0%;
+    padding: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #texture {
@@ -203,7 +203,7 @@ button {
     padding: 10px 50px;
     border-radius: 10px;
     margin: auto;
-    margin-left: 20px 0;
+    margin-left: 0px 0;
     border: 1px solid #707070;
     cursor: pointer;
     width: auto;
@@ -296,15 +296,15 @@ img.avatar {
 
 .glass-button {
     display: inline-block;
-    padding: 24px 32px;
+    padding: 14px 10px;
     border: 0;
     text-decoration: none;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    background-color: rgba(20, 18, 18, .4);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(50px);
     color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;

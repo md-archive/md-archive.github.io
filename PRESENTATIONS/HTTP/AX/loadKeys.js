@@ -5,7 +5,7 @@ function loadDoc() {
             myFunction(this);
         }
     };
-    xhttp.open("GET /index.html", "cd_catalog.xml", true);
+    xhttp.open("GET", "cd_catalog.xml", true);
     xhttp.send();
 
 }

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../../../css/fonts.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="loadKeys.js"></script>
+
     <!--BACKGROUND VIDEOS-->
     <div class="vmd_container">
         <video autoplay loop id="bg_video" muted plays-inline>
@@ -35,12 +35,14 @@
 
 <body>
     <form class="backdrop-blur" style="width: 60%; height: 70%">
+
         <h1 style="margin-top: 5% ">The XMLHttpRequest Object</h1>
-        <br><br>
-        <table id="demo" style="color: white"></table>
         <div class="position_ajax">
+            <script src="loadKeys.js"></script>
             <button class="glass-button" type="button" onclick="loadDoc()">Get my CD collection</button>
             <button class="glass-button" type="button" onclick="location.href='../index.html#/3'">Return to the presentation</button>
+            <br><br>
+            <table id="demo" style="color: white"></table>
         </div>
 
     </form>

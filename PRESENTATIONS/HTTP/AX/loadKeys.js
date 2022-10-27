@@ -5,7 +5,7 @@ function loadDoc() {
             myFunction(this);
         }
     };
-    xhttp.open("Set-Cookie: promo_shown=1; SameSite=Lax; GET", "cd_catalog.xml", true);
+    xhttp.open("GET /index.html", "cd_catalog.xml", true);
     xhttp.send();
 
 }

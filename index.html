@@ -39,8 +39,14 @@
             <!-- CONTAINER FOR USERNAME AND PASSWORD -->
             <h1>Welcome to md-archive.github.io!</h1>
             <h2>To try different scripts or software please refer to <a style="text-decoration: none;" href="https://www.github.com/md-archive">Github Repo</a></h2>
-            <input type="text" id="text" placeholder="Enter anything in mind">
-            <span id="output"></span>
+
+            <body onload="brython()">
+                <input type="text" id="text" placeholder="Enter anything in mind">
+                <span id="output"></span>
+                <script type="text/python" id="script1">
+                    from browser import document def show_text(e): document['output'].textContent = e.target.value; document['text'].bind('input', show_text)
+                </script>
+            </body>
             <div class="position">
                 <button onclick="location.href='login.html'" type="button">
                     Launch the App</button>

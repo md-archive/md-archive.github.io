@@ -23,13 +23,13 @@
     </div>
 </head>
 
-<body onload="brython()">
+<body>
     <!--<div class="header">
   <h1>Professional Media Archive</h1>
   <p class="typeA">Welcome to the Professional Media Archive Service</p> 
 </div>-->
     <div class="main_object">
-        <form action="#" method="post" class="backdrop-blur">
+        <form action="#" method="get" class="backdrop-blur">
             <!-- THIS IS A LOGIN SECTION -->
             <!--LOGO UI-->
 
@@ -39,18 +39,6 @@
             <!-- CONTAINER FOR USERNAME AND PASSWORD -->
             <h1>Welcome to md-archive.github.io!</h1>
             <h2>To try different scripts or software please refer to <a style="text-decoration: none;" href="https://www.github.com/md-archive">Github Repo</a></h2>
-
-            <h1>Get a joke</h1>
-
-            <button id="joke-btn">Get Joke</button>
-            <div id="joke" class="card">Click the "get joke" button</div>
-
-            <!-- Ajax call -->
-            <script type="text/python" id="script3">
-                from browser import document, ajax url = 'https://api.chucknorris.io/jokes/random' def on_complete(req): import json data = json.loads(req.responseText) joke = data['value'] document['joke'].text = joke def get_joke(e): req = ajax.ajax() req.open('GET',
-                url, True) req.bind('complete', on_complete) document['joke'].text = 'Loading...' req.send() document['joke-btn'].bind('click', get_joke)
-            </script>
-
             <div class="position">
                 <button onclick="location.href='login.html'" type="button">
                     Launch the App</button>

@@ -1,87 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Welcome to Media Archive -  Launching Soon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<head>
-    <title>Personal Media Archive - Welcome Message</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/layout_message.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython_stdlib.js">
-    </script>
-    <!--BACKGROUND VIDEOS-->
-    <div class="vmd_container">
-        <video autoplay loop id="bg_video" muted plays-inline>
-         <source src="videos/3.mp4" poster="images/4k.jpg" type="video/mp4">
-    </video>
-    </div>
-</head>
+		<!-- Header -->
+			<header id="header">
+                <img class="logo" src="logo.png" alt="logo">
+				<h1>Exciting news! 🚀</h1>
+				<p>Our brand-new site is launching soon, bringing you the best in IT and Software Engineering. Stay tuned for the official launch date and sign up for our newsletter to get exclusive updates and sneak peeks! 🌟</p>
+			</header>
 
-<body>
-    <!--<div class="header">
-  <h1>Professional Media Archive</h1>
-  <p class="typeA">Welcome to the Professional Media Archive Service</p> 
-</div>-->
-    <div class="main_object">
-        <form action="#" method="get" class="backdrop-blur">
-            <!-- THIS IS A LOGIN SECTION -->
-            <!--LOGO UI-->
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.github.com/md-archive" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:contact@md-archive.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>Copyright &copy; 2020-2024 Media Archive Ltd. All Rights Reserved</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
 
-            <div class="imgcontainer">
-                <img src="images/LogoUI.png" alt="Logo" class="avatar">
-            </div>
-            <!-- CONTAINER FOR USERNAME AND PASSWORD -->
-            <h1>Welcome to md-archive.github.io!</h1>
-            <h2>To try different scripts or software please refer to <a style="text-decoration: none;" href="https://www.github.com/md-archive">Github Repo</a></h2>
-            <div class="position">
-                <button onclick="location.href='login.html'" type="button">
-                    Launch the App</button>
-                <button onclick="location.href='PRESENTATIONS/index.html'" type="button">Run in Presentation Mode</button>
-            </div>
-    </div>
-    <!--
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>-->
-    </form>
-    </div>
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
 
-    <footer class="page-footer mt-auto">
-        <p class="typeB">Copyright © Media Archive Inc. 2020</p>
-        <p><a class="typeAB" href="privacy_policy.html">Privacy Policy</a></p>
-        <button class="bg_video_ctl" onclick="myFunction()">Pause</button>
-        <select class="selectpicker" data-width="fit">
-        <option data-content='English'>English</option>
-        <option  data-content='Español'>Español</option>
-        <option  data-content='Français'>Français</option>
-        <option  data-content='Русский'>Русский</option>
-        <option  data-content='日本語'>日本語</option>
-    </select>
-    </footer>
-</body>
-<script>
-    $(function() {
-        $('.selectpicker').selectpicker();
-    });
-</script>
-<script>
-    var video = document.getElementById("bg_video");
-    var btn = document.getElementById("bg_video_ctl");
-
-    function myFunction() {
-        if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-        } else {
-            video.pause();
-            btn.innerHTML = "Play";
-        }
-    }
-</script>
-
+	</body>
 </html>
